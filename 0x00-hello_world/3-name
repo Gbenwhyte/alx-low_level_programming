@@ -1,2 +1,2 @@
-#!/bin.bash
-gcc -c $CFILE -0 ./cisfun
+#!/bin/bash
+gcc -c $CFILE -o ./cisfun
