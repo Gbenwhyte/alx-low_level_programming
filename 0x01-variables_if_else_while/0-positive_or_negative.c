@@ -6,18 +6,17 @@
  * main- print if number is positive, zero or ngative
  * return: Always (success)
  */
-int main (void)
+int main(void)
 {
 	int;
 
 	srand(time(0));
-	n = rand () - RAND_MAX / 2;
-	
+	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-		printf ("%d is positive\n", n);
+		printf("%d is positive\n", n);
 	else if (n == 0)
 		printf("%d is zero\n", n);
-	else 
+	else
 		printf("%d is negative\n", n);
 	return (0);
 
