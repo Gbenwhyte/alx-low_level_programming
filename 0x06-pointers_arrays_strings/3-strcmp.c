@@ -1,20 +1,22 @@
 #include "main.h"
-/**
- * _strcmp - compares two strings
- * @s1: input parameter
- * @s2: input parameter
- *
- * Return: 0 if equal or b if is different
- */
-int _strcmp(char *s1, char *s2)
-{
-	int a = 0;
-	int b = 0;
 
-	while (s1[a] != '\0' && b == 0)
+/**
+ *  reverse_array - reverse an array.
+ *  @a: array.
+ *  @n: array's length.
+ */
+
+void reverse_array(int *a, int n)
+{
+	int i, j, tmp;
+
+	j = n - 1;
+
+	for (i = 0; i < n / 2; i++)
 	{
-		b = s1[a] - s2[a];
-		a++;
+		tmp = a[i];
+		a[i] = a[j];
+		a[j] = tmp;
+		j--;
 	}
-	return (b);
 }
